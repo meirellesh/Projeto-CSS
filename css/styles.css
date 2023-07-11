@@ -2,20 +2,23 @@
     --primary-color: #0E2954;
     --secondary-color: #1F6E8C;
     --tertiary-color: #2E8A99;
-    --quartenary-color: #e7eaf6;
+    --quartenary-color: #e7eaf6;   
+    font-family: monospace;
 }
 body {
     background-color: var(--secondary-color);
+    background-image: url("../imagens/background.jpg");
 }
 
 #side_nav {
     background: var(--primary-color);
-    width: 300px;
+    width: 400px;
 }
 
 .content {
     min-height: 100vh;
     width: 100%;
+    
 }
 
 .header-box {
@@ -35,7 +38,7 @@ body {
 
 a {
     color: var(--quartenary-color);
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 10px;
 }
 
@@ -101,7 +104,7 @@ hr {
 
 .texto {
     font-size: 14px;
-    text-align: justify;
+    text-align: justify;    
 }
 
 .inspiracoes {
