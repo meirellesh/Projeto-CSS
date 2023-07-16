@@ -1,12 +1,12 @@
 * {
-    --primary-color: #0E2954;
-    --secondary-color: #1F6E8C;
-    --tertiary-color: #2E8A99;
-    --quartenary-color: #e7eaf6;   
+    --primary-color: #0e2954;
+    --secondary-color: #1f6e8c;
+    --tertiary-color: #2e8a99;
+    --quartenary-color: #e7eaf6;
     font-family: monospace;
+    box-sizing: border-box;
 }
 body {
-    background-color: var(--secondary-color);
     background-image: url("../imagens/background.jpg");
 }
 
@@ -15,30 +15,21 @@ body {
     width: 400px;
 }
 
-.content {
-    min-height: 100vh;
-    width: 100%;
-    
-}
-
 .header-box {
-    display: flex;
+    display:flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 14px;
+    align-items: center;       
 }
 
 .header-box img {
-    margin-top: 30px;
-    margin: 50px;
     width: 200px;
+    margin: 30px;
     border-radius: 50%;
 }
 
 a {
     color: var(--quartenary-color);
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 10px;
 }
 
@@ -53,6 +44,7 @@ a:visited {
 a:hover {
     text-decoration: underline;
     color: #daa520;
+    transform: scale(1.1);
 }
 
 a:active {
@@ -81,8 +73,8 @@ hr {
 }
 
 .fs-6 {
-    width: 50%;
-    text-align: center;
+    width: 100%;
+    text-align: justify;
     margin-bottom: 10px;
     padding: 0px;
 }
@@ -91,42 +83,39 @@ hr {
     margin: 0px;
     margin-bottom: 5px;
     text-align: justify;
-    
 }
 
 .contato {
     margin-left: 15px;
-    width: 300px;
-    font-size: 13px;
-    text-align: justify;
+    font-size: 12px;   
     padding: 10px;
 }
 
 .texto {
-    font-size: 14px;
-    text-align: justify;    
+    font-size: 15px;
+    text-align: justify;
 }
 
 .inspiracoes {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display:flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; 
     margin: 20px 200px;
+    
 }
 
 .card-inspiracoes {
+    background-color: var(--tertiary-color);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     width: 300px;
     height: 300px;
+    align-items: center;
     border-radius: 8px;
     margin-bottom: 20px;
     padding: 20px;
-    background-color: var(--tertiary-color);
+
 }
 
 .card-inspiracoes:hover {
@@ -137,32 +126,38 @@ hr {
     cursor: pointer;
 }
 
+.card-inspiracoes img:hover {
+    transform: scale(1.05);
+    transition: 1s;
+}
+
 .card-inspiracoes img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 200px;
     border-radius: 50%;
+    
 }
 
 .nome-inspiracao {
-    margin-top: 20px;
-    color: black;
+    margin-top: 20px;    
+}
+
+.nome-inspiracao:hover {
+    transform: scale(1.15);     
 }
 
 button {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    right: 1%;
-    bottom: 2%;
-    border-radius: 50%;
     background-color: var(--tertiary-color);
     border: 1px solid var(--tertiary-color);
-    justify-content: center;
-    align-items: center;
     color: white;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;    
 }
 
 @media screen and (max-width: 767px) {
