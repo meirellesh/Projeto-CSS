@@ -127,18 +127,19 @@ hr {
 }
 
 .card-inspiracoes img:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     transition: 1s;
 }
 
-.card-inspiracoes img {
-    width: 200px;
+.card-inspiracoes img {    
+    margin-top:20px;
+    width: 150px;
     border-radius: 50%;
     
 }
 
 .nome-inspiracao {
-    margin-top: 20px;    
+    margin-top: 40px;    
 }
 
 .nome-inspiracao:hover {
