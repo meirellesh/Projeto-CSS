@@ -6,6 +6,7 @@
     font-family: monospace;
     box-sizing: border-box;
 }
+
 body {
     background-image: url("../imagens/background.jpg");
     background-repeat: no-repeat;
@@ -156,7 +157,7 @@ button {
     height: 50px;
     border-radius: 50%;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -240,7 +241,7 @@ button {
         justify-content: flex-start;
         font-size: 14px;
         text-align: justify;
-        width: 100%;        
+        width: 100%;
         margin: 10px 10px 10px 0px;
     }
     .inspiracoes {
@@ -303,6 +304,7 @@ button {
         margin-left: 30px;
         width: 90%;
     }
+
     .fs-6 {
         display: flex;
         flex-direction: column;
@@ -332,7 +334,7 @@ button {
         justify-content: flex-start;
         font-size: 14px;
         text-align: justify;
-        width: 100%;        
+        width: 100%;
         margin: 10px 10px 10px 0px;
     }
     .inspiracoes {
